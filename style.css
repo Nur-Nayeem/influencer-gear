@@ -31,6 +31,10 @@
 
 /* header styles  */
 
+.hide-big{
+    display: none;
+}
+
 header{
     max-width: 1200px; 
     margin: 50px auto; 
@@ -48,16 +52,28 @@ nav ul{
     gap: 34px;
 }
 
-nav ul li{
+.navigations{
+    align-items: center;
+    gap: 34px;
+}
+.navigations ul li{
     list-style: none;
 }
-nav ul li a{
+.navigations ul li a{
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
 }
+.search-icon{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 
-
+.card-icon-btn{
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
 
 /* hero section  */
 
@@ -93,8 +109,49 @@ nav ul li a{
     background-repeat: no-repeat;
     width: 475px;
     height: 475px;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-img-div img{
     background: transparent;
+}
+
+
+@media screen and (max-width: 575.98px) {
+    .hide-sm{
+        display: none;
+    }
+    .hide-big,.card-icon-btn{
+        display: block;
+        font-weight: 700;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+    }
+    nav{
+        justify-content: space-between;
+        margin-left: 16px;
+        margin-right: 16px;
+        align-items: center;
+    }
+    nav h1{
+        font-size: 1rem;
+    }
+
+
+    .hero-section{
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .hero-content{
+        text-align: center;
+    }
+
+    .hero-content h1{
+        font-size: 1.8rem;
+    }
+
+
 }

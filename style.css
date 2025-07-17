@@ -31,7 +31,7 @@
 
 /* header styles  */
 
-.hide-big{
+.hide-bar{
     display: none;
 }
 
@@ -79,7 +79,7 @@ nav ul{
 
 .hero-section{
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 50px 0;
     gap: 130px;
 }
@@ -118,17 +118,27 @@ nav ul{
 }
 
 
-@media screen and (max-width: 575.98px) {
-    .hide-sm{
+.ecommerce-platforms{
+    max-width: 1110px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 767.98px) {
+    .hide-nav{
         display: none;
     }
-    .hide-big,.card-icon-btn{
+    
+    .hide-bar,.card-icon-btn{
         display: block;
         font-weight: 700;
         font-size: 1.5rem;
         border: none;
         cursor: pointer;
     }
+
     nav{
         justify-content: space-between;
         margin-left: 16px;
@@ -153,5 +163,103 @@ nav ul{
         font-size: 1.8rem;
     }
 
+    .hero-img-div{
+        width: 358px;
+        height: 358px;
+        background-size: contain;
+    }
+    .hero-img-div img{
+        width: 260px;
+        height: 262px;
+    }
+    .ecommerce-platforms{
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
 
 }
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .hero-section{
+        justify-content: space-around;
+        gap: 30px;
+    }
+}
+
+
+/* products style  */
+
+.product-section{
+    position: relative;
+    max-width: 1048px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.product-section h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+
+.product-card{
+    max-width: 330px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.product-card img,.card-content{
+    margin: 16px 14px;
+}
+.card-content{
+    padding-bottom: 16px;
+}
+.product-card h3{
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.rating{
+    margin-top: 6px;
+}
+
+
+.card-content p{
+    margin: 6px 0;
+}
+
+.see-more{
+    position: absolute;
+    color: rgba(224, 44, 109, 0.87);
+    text-decoration: none;
+    font-size: 1.5rem;
+    top: -1;
+    right: 0;
+}
+
+@media screen and (max-width:767.98px) {
+    .products-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+

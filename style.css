@@ -118,9 +118,9 @@ nav ul{
 }
 
 
-.ecommerce-platforms{
+.ecommerce-platforms, .feature-prod-section{
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 100px auto;
     justify-content: space-around;
     align-items: center;
 }
@@ -274,4 +274,22 @@ nav ul{
     }
 }
 
+
+
+.feature-prod-section{
+    gap: 96px;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-content h2{
+    color: #0A0826;
+    font-size: 2.36rem;
+    margin: 0;
+}
+.feature-content p{
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+}
 

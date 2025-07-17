@@ -196,13 +196,13 @@ nav ul{
     position: relative;
     max-width: 1048px;
     margin: 100px auto;
-    text-align: center;
 }
 
 .product-section h2{
     font-size: 1.7rem;
     font-weight: 600;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .products-container{
@@ -229,13 +229,25 @@ nav ul{
 .product-card h3{
     margin-top: 0;
     margin-bottom: 6px;
+    font-size: 1.7rem;
+    font-weight:500;
+}
+.price{
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 .rating{
     margin-top: 6px;
 }
-
+.rating i{
+    color: #FB8200;
+}
 
 .card-content p{
+    font-size: 1rem;
+    color: #787885;
     margin: 6px 0;
 }
 

@@ -75,7 +75,8 @@ nav ul{
     font-size: 1.5rem;
 }
 
-.card-icon-btn{
+.cart-icon-btn{
+    background-color: rgba(255, 255, 255, 1);
     border: none;
     font-weight: 600;
     font-size: 1.5rem;
@@ -137,7 +138,8 @@ nav ul{
         display: none;
     }
     
-    .hide-bar,.card-icon-btn{
+    .hide-bar,.cart-icon-btn{
+        background-color: rgba(255, 255, 255, 1);
         display: block;
         font-weight: 700;
         font-size: 1.5rem;
@@ -264,6 +266,7 @@ nav ul{
     font-size: 1.5rem;
     top: -1;
     right: 0;
+    margin: 10px 10px;
 }
 
 @media screen and (max-width:767.98px) {
@@ -297,6 +300,7 @@ nav ul{
     color: #6C6C6C;
     font-size: 1rem;
     font-weight: 700;
+    margin: 20px 0;
 }
 
 @media screen and (max-width:767.98px) {
@@ -304,6 +308,8 @@ nav ul{
         flex-direction: column-reverse;
     }
     .feature-content{
+        padding-left: 10px;
+        padding-right: 10px;
         text-align: center;
     }
     .feature-prod-section img{
